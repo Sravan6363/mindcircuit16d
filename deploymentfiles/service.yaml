@@ -5,7 +5,7 @@ kind: Service
 metadata:
    name: fb-lb-svc
    labels:
-     app: facebookk 
+     app: facebook
 spec:
   type: LoadBalancer
   ports:
@@ -14,6 +14,6 @@ spec:
       protocol: TCP
 
   selector:
-        app: facebookk
+        app: facebook
         
       
