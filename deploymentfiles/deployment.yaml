@@ -4,19 +4,19 @@ kind: Deployment
 metadata:
   name: fb-deploy 
   labels:
-    app: facebook
+    app: facebookk
     env: lab 
 
 spec:
   selector:
     matchLabels:
-      app: facebook 
+      app: facebookk 
   replicas: 2  
   template:
     metadata:
       name: fb-pod 
       labels:
-        app: facebook
+        app: facebookk
         env: lab
         tier: frontend 
         version: v1_AC
